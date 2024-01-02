@@ -56,7 +56,7 @@
     </nav>
 
 
-   
+
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
@@ -206,9 +206,28 @@
             <!-- ./col -->
           </div>
           <!-- /.row -->
-          <canvas id="employmentChart" width="400" height="200"></canvas>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card card-danger">
+                <div class="card-header">
+                  <h3 class="card-title">Employement Stats</h3>
 
-        </div><!-- /.container-fluid -->
+                  <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <canvas id="employmentChart"
+                    style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
       </section>
       <!-- /.content -->
     </div>
@@ -264,11 +283,11 @@
         { name: "John", employmentStatus: "Unemployed" },
         // Add more user data here
       ];
-  
+
       // Process data to get the count of employed and unemployed users
       var employedCount = userData.filter(user => user.employmentStatus === "Employed").length;
       var unemployedCount = userData.filter(user => user.employmentStatus === "Unemployed").length;
-  
+
       // Create Chart.js chart
       var ctx = document.getElementById("employmentChart").getContext("2d");
       var myChart = new Chart(ctx, {
@@ -283,7 +302,7 @@
       });
     });
   </script>
-  
+
 </body>
 
 </html>
