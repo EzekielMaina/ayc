@@ -296,12 +296,14 @@
 /**Abou**/
 .black-box {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     /* border: 2px solid black; */
-    height: 100px;
-    width: 30%;
-    left: 5px;
-    top: 2px;
+    height: 170px;
+    width: 40%;
+    left: 390px;
+    top: 65px;
+    border-radius: 5px;
+    border: none;
 }
 /**style="width: 60%; height: 90%; z-index: 3; right: 3px;"**/
 .gray-box {
@@ -310,19 +312,62 @@
     /* background: lightgray; */
     height: 170px;
     width: 40%;
-    left: 40px;
-    bottom: 200px;
-    top: 120px;
+    left: 390px;
+    /* bottom: 200px; */
+    top: 270px;
+    border-radius: 5px;
+    border: none;
 }
 
 .green-box {
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     /* background: lightgreen; */
-    width: 315px;
-    left: 260px;
-    top: 150px;
-    height:370px;
+    width: 70%;
+    left: 5px;
+    top: 60px;
+    height:75%;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Media query for phone devices */
+@media only screen and (max-width: 1000px) {
+    .black-box {
+        top: 0%;
+        left: 120px;
+        width: 90%;
+        height: auto;
+        position: relative;
+        left: 5px;
+        top: 10px;
+        
+    }
+
+    .gray-box {
+        top: 0%;
+        left: 120px;
+        width: 90%;
+        height: auto;
+        position: relative;
+        left: 5px;
+        top: 10px;
+        margin-top: 5px;
+    }
+
+    .green-box {
+        width: 90%;
+        height: auto;
+        position: relative;
+        left: 1px;
+        top: 10px;
+    }
+
+    .conainer {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /*** Team ***/
