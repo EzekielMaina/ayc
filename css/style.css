@@ -99,13 +99,25 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
 }
-
+@media (min-width: 992.98px) {
+    .shw{
+        display: none;
+     }
+     .nshw{
+        display: contents;
+     }
+}
 @media (max-width: 991.98px) {
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
     }
-
+ .shw{
+    display: contents;
+ }
+ .nshw{
+    display: none;
+ }
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
@@ -331,8 +343,10 @@
     border: none;
 }
 
+
 /* Media query for phone devices */
 @media only screen and (max-width: 1000px) {
+    
     .black-box {
         top: 0%;
         left: 120px;
