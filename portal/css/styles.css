@@ -1,0 +1,13 @@
+/* Your existing styles */
+
+@media only screen  and  (max-width: 900px) {
+    /* Adjust styles for smaller screens, e.g., mobile devices */
+    .navbar-nav {
+      flex-direction: column; /* Stack items vertically for smaller screens */
+    }
+    
+    .navbar-nav li {
+      margin-bottom: 10px; /* Add spacing between items */
+    }
+  }
+  
