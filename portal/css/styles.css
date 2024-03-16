@@ -3,11 +3,11 @@
 @media only screen  and  (max-width: 900px) {
     /* Adjust styles for smaller screens, e.g., mobile devices */
     .navbar-nav {
-      flex-direction: column; /* Stack items vertically for smaller screens */
+      flex-direction: row-reverse; /* Stack items vertically for smaller screens */
     }
     
     .navbar-nav li {
-      margin-bottom: 10px; /* Add spacing between items */
+      margin: 4px; /* Add spacing between items */
     }
   }
-  
+ 

@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Dummy data (replace with your actual data)
+    var userData = [
+      { name: "Harrison", employmentStatus: "Employed" },
+      { name: "John", employmentStatus: "Unemployed" },
+      // Add more user data here
+    ];
+
+    // Process data to get the count of employed and unemployed users
+    var employedCount = userData.filter(user => user.employmentStatus === "Employed").length;
+    var unemployedCount = userData.filter(user => user.employmentStatus === "Unemployed").length;
+
+    // Create Chart.js chart
+    var ctx = document.getElementById("employmentChart").getContext("2d");
+    var myChart = new Chart(ctx, {
+      type: "pie",
+      data: {
+        labels: ["Employed", "Unemployed"],
+        datasets: [{
+          data: [employedCount, unemployedCount],
+          backgroundColor: ["#36A2EB", "#FF6384"],
+        }],
+      },
+    });
+  });
+document.addEventListener("DOMContentLoaded", function () {
     const notificationDropdownToggle = document.getElementById("notificationDropdownToggle");
     const notificationDropdownMenu = document.getElementById("notificationDropdownMenu");
 
