@@ -35,7 +35,41 @@
 
 
       </ul>
+      <ul class="navbar-nav ml-auto m-2">
+        <li class="nav-item dropdown mr-1">
+          <a class="nav-link" id="showMessagesBtn" href="javascript:void" aria-expanded="false">
+            <i class="fas fa-envelope"></i>
+            <span class="badge badge-info navbar-badge">10</span>
+          </a>
 
+        </li>
+        <li class="nav-item dropdown mr-1">
+          <a class="nav-link" id="notificationDropdownToggle" href="#" aria-expanded="false">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" id="notificationDropdownMenu">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new email messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#messageModal">See All
+              Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" role="button">
+            <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.2em"
+                viewBox="0 0 1568 1280">
+                <path fill="currentColor"
+                  d="M640 1184q0 4 1 20t.5 26.5t-3 23.5t-10 19.5t-20.5 6.5H288q-119 0-203.5-84.5T0 992V288Q0 169 84.5 84.5T288 0h320q13 0 22.5 9.5T640 32q0 4 1 20t.5 26.5t-3 23.5t-10 19.5T608 128H288q-66 0-113 47t-47 113v704q0 66 47 113t113 47h312l11.5 1l11.5 3l8 5.5l7 9zm928-544q0 26-19 45l-544 544q-19 19-45 19t-45-19t-19-45V896H448q-26 0-45-19t-19-45V448q0-26 19-45t45-19h448V96q0-26 19-45t45-19t45 19l544 544q19 19 19 45" />
+              </svg></i>
+          </a>
+        </li>
+      </ul>
 
 
     </nav>
@@ -135,28 +169,29 @@
 
         <div class="card">
           <div class="card-header">
-           <div class="row">
-            <h3 class="card-title"> Job Application Stats</h3>
-            <div class="btn-group ml-auto" bis_skin_checked="1">
-              <button type="button" class="btn btn-info">Action</button>
-              <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu" role="menu" bis_skin_checked="1" >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider" bis_skin_checked="1"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+            <div class="row">
+              <h3 class="card-title"> Job Application Stats</h3>
+              <div class="btn-group ml-auto" bis_skin_checked="1">
+                <button type="button" class="btn btn-info">Action</button>
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" role="menu" bis_skin_checked="1">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider" bis_skin_checked="1"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
               </div>
             </div>
-           </div>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
               <thead>
-                <tr >
+                <tr>
                   <th>Candidate Name</th>
                   <th>Job Title</th>
                   <th>Status</th>
@@ -165,45 +200,45 @@
                 </tr>
               </thead>
               <tbody>
-               <!-- Candidate 11 -->
-<tr>
-  <td>Liam Thompson</td>
-  <td>Content Writer</td>
-  <td><span class="badge badge-danger">pending</span></td>
-  <td>2024-04-20</td>
-</tr>
+                <!-- Candidate 11 -->
+                <tr>
+                  <td>Liam Thompson</td>
+                  <td>Content Writer</td>
+                  <td><button class="badge badge-danger" style="border: 1cap;">pending</button></td>
+                  <td>2024-04-20</td>
+                </tr>
 
-<!-- Candidate 12 -->
-<tr>
-  <td>Charlotte Harris</td>
-  <td>Financial Analyst</td>
-  <td><span class="badge badge-info">Reviewed</span></td>
-  <td>2024-04-25</td>
-</tr>
+                <!-- Candidate 12 -->
+                <tr>
+                  <td>Charlotte Harris</td>
+                  <td>Financial Analyst</td>
+                  <td><button class="badge badge-info" style="border: 1cap;">Reviewed</button></td>
+                  <td>2024-04-25</td>
+                </tr>
 
-<!-- Candidate 13 -->
-<tr>
-  <td>Lucas Lee</td>
-  <td>UX/UI Designer</td>
-  <td><span class="badge badge-danger">pending</span></td>
-  <td>2024-05-01</td>
-</tr>
+                <!-- Candidate 13 -->
+                <tr>
+                  <td>Lucas Lee</td>
+                  <td>UX/UI Designer</td>
+                  <td><button class="badge badge-danger" style="border: 1cap;">pending</button></td>
+                  <td>2024-05-01</td>
+                </tr>
 
-<!-- Candidate 14 -->
-<tr>
-  <td>Isabella Clark</td>
-  <td>Sales Representative</td>
-  <td><span class="badge badge-danger">pending</span></td>
-  <td>2024-05-05</td>
-</tr>
+                <!-- Candidate 14 -->
+                <tr>
+                  <td>Isabella Clark</td>
+                  <td>Sales Representative</td>
+                  <td><button class="badge badge-danger" style="border: 1cap;">pending</button></td>
+                  <td>2024-05-05</td>
+                </tr>
 
-<!-- Candidate 15 -->
-<tr>
-  <td>Benjamin Martinez</td>
-  <td>Customer Service Representative</td>
-  <td><span class="badge badge-info">Reviewed</span></td>
-  <td>2024-05-10</td>
-</tr>
+                <!-- Candidate 15 -->
+                <tr>
+                  <td>Benjamin Martinez</td>
+                  <td>Customer Service Representative</td>
+                  <td><button class="badge badge-info" style="border: 1cap;">Reviewed</button></td>
+                  <td>2024-05-10</td>
+                </tr>
               </tbody>
               <tfoot>
                 <tr>

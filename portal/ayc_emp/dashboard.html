@@ -37,7 +37,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
     <!-- Navbar -->
-   
+
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
       <!-- Preloader -->
@@ -53,7 +53,7 @@
             <i class="fas fa-envelope"></i>
             <span class="badge badge-info navbar-badge">10</span>
           </a>
-          
+
         </li>
         <li class="nav-item dropdown mr-1">
           <a class="nav-link" id="notificationDropdownToggle" href="#" aria-expanded="false">
@@ -68,7 +68,8 @@
               <span class="float-right text-muted text-sm">3 mins</span>
             </a>
             <div class="dropdown-divider"></div>
-            <a href="#"  class="btn btn-primary" data-toggle="modal" data-target="#messageModal">See All Notifications</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#messageModal">See All
+              Notifications</a>
           </div>
         </li>
         <li class="nav-item">
@@ -110,13 +111,13 @@
               </a>
             </li>
             <li class="nav-item ">
-                <a href="profile.html" class="nav-link ">
-                  <i class="nav-icon fas fa-user"></i>
-                  <p>
-                    Profile
-                  </p>
-                </a>
-              </li>
+              <a href="profile.html" class="nav-link ">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Profile
+                </p>
+              </a>
+            </li>
             <li class="nav-item ">
               <a href="aycjobapplication.html" class="nav-link ">
                 <i class="nav-icon fas fa-file-alt"></i>
@@ -172,23 +173,23 @@
         <div class="container-fluid">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6">
               <!-- small box -->
               <div class="small-box bg-info">
                 <div class="inner">
                   <h3>150</h3>
 
-                  <p>Users</p>
+                  <p>Total Applications</p>
                 </div>
                 <div class="icon">
                   <i class="fa fa-users"></i>
                 </div>
-                <a href="aycmembers.html" class="small-box-footer">More info <i
+                <a href="aycjobapplication.html" class="small-box-footer">More info <i
                     class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6">
               <!-- small box -->
               <div class="small-box bg-success">
                 <div class="inner">
@@ -202,30 +203,14 @@
                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
-              <!-- small box -->
-              <div class="small-box bg-warning">
-                <div class="inner">
-                  <h3>4</h3>
 
-                  <p>User Registration</p>
-                </div>
-                <div class="icon">
-                  <i class="fa fa-globe"></i>
-                </div>
-                <a href="aycregister.html" class="small-box-footer">Register user <i
-                    class="fas fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-            <!-- ./col -->
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-4 col-6">
               <!-- small box -->
               <div class="small-box bg-primary">
                 <div class="inner">
                   <h3>65</h3>
 
-                  <p>posts</p>
+                  <p>Total posts</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-pie-graph"></i>
@@ -253,7 +238,7 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <canvas id="employmentChart"
+                  <canvas id="applications"
                     style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
                 </div>
               </div>
@@ -305,102 +290,103 @@
                 </div>
                 <!-- /.card-body -->
                 <div class="card-footer text-center">
-                  <a href="" type="button " class="btn btn-outline-info ">View All Applicantions</a>
+                  <a href="aycjobapplication.html" type="button " class="btn btn-outline-info ">View All
+                    Applicantions</a>
                 </div>
                 <!-- /.card-footer -->
               </div>
               <!--/.card -->
             </div>
             <!-- Message Icon -->
-            
-          <div class="floating-chat"id="chatContainer" style="display: none;" >
+
+            <div class="floating-chat" id="chatContainer" style="display: none;">
               <div class="card card-primary card-outline direct-chat direct-chat-primary shadow-none">
-                  <div class="card-header">
-                      <div class="card-tools">
-                          <span title="3 New Messages" class="badge bg-primary">1</span>
-                          <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                              <i class="fas fa-minus"></i>
-                          </button>
-                          <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
-                              <i class="fas fa-comments"></i>
-                          </button>
-                         
-                      </div>
+                <div class="card-header">
+                  <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-primary">1</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fas fa-comments"></i>
+                    </button>
+
                   </div>
-          
-                  <div class="card-body">
-          
-                      <div class="direct-chat-messages">
-          
-                          <div class="direct-chat-msg">
-                              <div class="direct-chat-infos clearfix">
-                                  <span class="direct-chat-name float-left">Alexander Pierce</span>
-                                  <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
-                              </div>
-          
-                              <img class="direct-chat-img" src="../../img/ezekiel.png" alt="Message User Image">
-          
-                              <div class="direct-chat-text">
-                                  Is the portal missbehaving?
-                                  
-                              </div>
-          
-                          </div>
-          
-          
-                          <div class="direct-chat-msg right">
-                              <div class="direct-chat-infos clearfix">
-                                  <span class="direct-chat-name float-right">Sarah Bullock</span>
-                                  <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
-                              </div>
-          
-                              <img class="direct-chat-img" src="../../img/deborah.png" alt="Message User Image">
-          
-                              <div class="direct-chat-text">
-                                  You better believe it!
-                              </div>
-          
-                          </div>
-          
+                </div>
+
+                <div class="card-body">
+
+                  <div class="direct-chat-messages">
+
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">Alexander Pierce</span>
+                        <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
                       </div>
-          
-          
-                      <div class="direct-chat-contacts">
-                          <ul class="contacts-list">
-                              <li>
-                                  <a href="#">
-                                      <img class="contacts-list-img" src="../../img/ezekiel.png" alt="User Avatar">
-                                      <div class="contacts-list-info">
-                                          <span class="contacts-list-name">
-                                              Count Dracula
-                                              <small class="contacts-list-date float-right">2/28/2015</small>
-                                          </span>
-                                          <span class="contacts-list-msg">How have you been? I was...</span>
-                                      </div>
-          
-                                  </a>
-                              </li>
-          
-                          </ul>
-          
+
+                      <img class="direct-chat-img" src="../../img/ezekiel.png" alt="Message User Image">
+
+                      <div class="direct-chat-text">
+                        Is the portal missbehaving?
+
                       </div>
-          
+
+                    </div>
+
+
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">Sarah Bullock</span>
+                        <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
+                      </div>
+
+                      <img class="direct-chat-img" src="../../img/deborah.png" alt="Message User Image">
+
+                      <div class="direct-chat-text">
+                        You better believe it!
+                      </div>
+
+                    </div>
+
                   </div>
-          
-                  <div class="card-footer">
-                      <form action="#" method="post">
-                          <div class="input-group">
-                              <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                              <span class="input-group-append">
-                                  <button type="submit" class="btn btn-primary">Send</button>
-                              </span>
+
+
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../../img/ezekiel.png" alt="User Avatar">
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              Count Dracula
+                              <small class="contacts-list-date float-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
                           </div>
-                      </form>
+
+                        </a>
+                      </li>
+
+                    </ul>
+
                   </div>
-          
+
+                </div>
+
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+
               </div>
-          </div>
-          
+            </div>
+
             <!-- /.col -->
           </div><!-- /.container-fluid -->
       </section>
@@ -456,42 +442,16 @@
   <script src="../js/ayc.js"></script>
   <script>
     // JavaScript to toggle visibility of chat container
-    document.getElementById('showMessagesBtn').addEventListener('click', function() {
-        var chatContainer = document.getElementById('chatContainer');
-        if (chatContainer.style.display === 'none') {
-            chatContainer.style.display = 'block';
-        } else {
-            chatContainer.style.display = 'none';
-        }
-    });
-</script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Dummy data (replace with your actual data)
-      var userData = [
-        { name: "Harrison", employmentStatus: "Reviewed applications" },
-        { name: "John", employmentStatus: "UnReviewed applications" },
-        // Add more user data here
-      ];
-
-      // Process data to get the count of employed and unemployed users
-      var employedCount = userData.filter(user => user.employmentStatus === "Reviewed applications").length;
-      var unemployedCount = userData.filter(user => user.employmentStatus === "UnReviewed applications").length;
-
-      // Create Chart.js chart
-      var ctx = document.getElementById("employmentChart").getContext("2d");
-      var myChart = new Chart(ctx, {
-        type: "pie",
-        data: {
-          labels: ["Reviewed applications", "UnReviewed applications"],
-          datasets: [{
-            data: [employedCount, unemployedCount],
-            backgroundColor: ["#36A2EB", "#FF6384"],
-          }],
-        },
-      });
+    document.getElementById('showMessagesBtn').addEventListener('click', function () {
+      var chatContainer = document.getElementById('chatContainer');
+      if (chatContainer.style.display === 'none') {
+        chatContainer.style.display = 'block';
+      } else {
+        chatContainer.style.display = 'none';
+      }
     });
   </script>
+
 
 </body>
 

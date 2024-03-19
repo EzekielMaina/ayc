@@ -4,33 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AYC | Dashboard</title>
+    <title>AYC| User Profile</title>
     <link rel="shortcut icon" href="../../img/akurinu_youth_convention_logo.png" type="image/x-icon">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/tempusdominus-bootstrap-4@5.1.2/dist/css/tempusdominus-bootstrap-4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/dist/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/dist/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker@3.1.3/daterangepicker.css">
-    <!-- Summernote -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
-    <!-- Site wrapper -->
     <div class="wrapper">
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -40,25 +25,17 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
 
+
             </ul>
-            <ul class="navbar-nav row ml-auto m-2">
+
+            <ul class="navbar-nav ml-auto m-2">
                 <li class="nav-item dropdown mr-1">
-                    <a class="nav-link" id="messageDropdownToggle" href="#" aria-expanded="false">
+                    <a class="nav-link" id="showMessagesBtn" href="javascript:void" aria-expanded="false">
                         <i class="fas fa-envelope"></i>
                         <span class="badge badge-info navbar-badge">10</span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" id="messageDropdownMenu">
-                        <span class="dropdown-item dropdown-header">10 New Messages</span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> New message 1
-                            <span class="float-right text-muted text-sm">2 mins</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-                    </div>
-                </li>
 
+                </li>
                 <li class="nav-item dropdown mr-1">
                     <a class="nav-link" id="notificationDropdownToggle" href="#" aria-expanded="false">
                         <i class="far fa-bell"></i>
@@ -68,16 +45,16 @@
                         <span class="dropdown-item dropdown-header">15 Notifications</span>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <i class="fas fa-envelope mr-2"></i> 4 new email messages
                             <span class="float-right text-muted text-sm">3 mins</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#messageModal">See All
+                            Notifications</a>
                     </div>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link" href="../login.html" role="button">
+                    <a class="nav-link" href="login.html" role="button">
                         <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.2em"
                                 viewBox="0 0 1568 1280">
                                 <path fill="currentColor"
@@ -86,11 +63,14 @@
                     </a>
                 </li>
             </ul>
+
         </nav>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-light-primary elevation-4">
+
+
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
@@ -99,7 +79,7 @@
                         <img src="../../img/ezekiel.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">user</a> <i class="badge-success rounded-circle bg-success"></i>
+                        <a href="#" class="d-block">Admin</a> <i class="badge-success rounded-circle bg-success"></i>
                     </div>
                 </div>
 
@@ -108,55 +88,68 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+                           with font-awesome or any other icon font library -->
                         <li class="nav-item ">
-                            <a href="#" class="nav-link active">
+                            <a href="dashboard.html" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
                                 </p>
                             </a>
-
                         </li>
                         <li class="nav-item ">
-                            <a href="resume.html" class="nav-link ">
-                                <i class="nav-icon fas fa-book"></i>
+                            <a href="javascript:void" class="nav-link ">
+                                <i class="nav-icon fas fa-user"></i>
                                 <p>
-                                    Resume
+                                    Profile
                                 </p>
                             </a>
-
                         </li>
                         <li class="nav-item ">
-                            <a href="searchjob.html" class="nav-link ">
-                                <i class="nav-icon fas fa-search"></i>
+                            <a href="aycjobapplication.html" class="nav-link ">
+                                <i class="nav-icon fas fa-file-alt"></i>
                                 <p>
-                                    Search Jobs
+                                    Job Applications
                                 </p>
                             </a>
-
                         </li>
-
-
+                        <li class="nav-item ">
+                            <a href="aycjobpost.html" class="nav-link ">
+                                <i class="nav-icon fas fa-briefcase"></i>
+                                <p>
+                                    Post Job
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="aycjobposted.html" class="nav-link ">
+                                <i class="nav-icon fas fa-briefcase"></i>
+                                <p>
+                                    Posted Job
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
         </aside>
+
+
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="content-wrapper pb-1">
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Profile</h1>
+                            <h4 class="text-primary text-muted">Profile Review</h4>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">User Profile</li>
+                                <li class="breadcrumb-item"><a href="javascript:void">Reviewing</a></li>
+                                <li class="breadcrumb-item active">applyee Profile</li>
                             </ol>
                         </div>
                     </div>
@@ -165,98 +158,114 @@
 
             <!-- Main content -->
             <section class="content">
-                <div class="container-fluid ">
-                    <div class="row">
-                        <div class="col-md-8">
+                <div class="container text-center justify-content-center ">
+                    <div class="justify-content-center">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!-- Widget: user profile -->
+                                <div class="card card-widget widget-user">
+                                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                                    <div class="widget-user-header bg-info">
+                                        <h3 class="widget-user-username">Alexander Pierce</h3>
+                                        <h5 class="widget-user-desc">Founder &amp; CEO</h5>
+                                    </div>
+                                    <div class="widget-user-image">
+                                        <img class="img-circle elevation-2" src="../../img/isaac.png" alt="User Avatar">
+                                    </div>
+                                    <div class="card-body box-profile">
+                                        <br>
+                                        <strong><i class="fas fa-book mr-1"></i> Education</strong>
 
-                            <!-- Profile Image -->
-                            <div class="card card-primary card-outline">
-                                <div class="card-body box-profile">
-                                    <div class="text-center">
-                                        <img class="profile-user-img img-fluid img-circle" src="../../img/ezekiel.png"
-                                            alt="User profile picture">
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from MASENO University
+                                        </p>
+
+                                        <hr>
+
+                                        <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+
+                                        <p class="text-muted">Nairobi, Kenya</p>
+
+                                        <hr>
+
+                                        <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+
+                                        <p class="text-muted">
+                                            <span class="tag tag-danger">UI Design</span>
+                                            <span class="tag tag-success">Coding</span>
+                                            <span class="tag tag-info">Javascript</span>
+                                            <span class="tag tag-warning">PHP</span>
+                                            <span class="tag tag-primary">Node.js</span>
+                                        </p>
+
+                                        <hr>
+
+                                        <strong><i class="far fa-file-alt mr-1"></i> Work Description</strong>
+
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Etiam
+                                            fermentum enim neque.</p>
+
+
 
                                     </div>
-                                    <h3 class="profile-username text-center">Ezekiel Maina</h3>
-                                    <p class="text-muted text-center">AYC member </p>
-                                    <strong><i class="fas fa-book mr-1"></i> Education</strong>
-
-                                    <p class="text-muted">
-                                        B.S. in Computer Science from MASENO University
-                                    </p>
-
-                                    <hr>
-
-                                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-
-                                    <p class="text-muted">Nairobi, Kenya</p>
-
-                                    <hr>
-
-                                    <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
-
-                                    <p class="text-muted">
-                                        <span class="tag tag-danger">UI Design</span>
-                                        <span class="tag tag-success">Coding</span>
-                                        <span class="tag tag-info">Javascript</span>
-                                        <span class="tag tag-warning">PHP</span>
-                                        <span class="tag tag-primary">Node.js</span>
-                                    </p>
-                                    <hr>
-                                    <div class="justify-content-center text-center">
-                                        <button class="btn btn-success text-center" data-toggle="modal"
-                                            data-target="#AYCeditadminmodal">Edit<i
-                                                class="fas fa-pencil-alt ml-2"></i></button>
+                                    <div class="card-footer">
+                                        <div class="row">
+                                            <div class="col-sm-4 border-right">
+                                                <div class="description-block">
+                                                    <h5 class="description-header">3,200</h5>
+                                                    <span class="description-text">SALES</span>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-sm-4 border-right">
+                                                <div class="description-block">
+                                                    <h5 class="description-header">13,000</h5>
+                                                    <span class="description-text">FOLLOWERS</span>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-sm-4">
+                                                <div class="description-block">
+                                                    <h5 class="description-header">35</h5>
+                                                    <span class="description-text">PRODUCTS</span>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.row -->
                                     </div>
                                 </div>
-                                <!-- /.card-body -->
+                                <!-- /.widget-user -->
                             </div>
                             <!-- /.card -->
 
-                        </div>
-                        <div class="col-md-4">
+                            <!-- Documents Box -->
 
-                            <div class="info-box mb-3 bg-warning">
-                                <span class="info-box-icon"><i class="fas fa-tag"></i></span>
-                                <div class="info-box-content">
-                                    <a href="#" style="color: #fff;"> <span class="info-box-text">Jobs
-                                            Applied</span></a>
-                                    <span class="info-box-number">15</span>
-                                </div>
-
-                            </div>
-
-                            <div class="info-box mb-3 bg-success">
-                                <span class="info-box-icon"><i class="fas fa-briefcase"></i></span>
-                                <div class="info-box-content">
-                                    <a href="#" style="color: #fff;"><span class="info-box-text">Possible Jobs
-                                            Available</span></a>
-                                    <span class="info-box-number">92</span>
-                                </div>
-
-                            </div>
+                            <!-- /.card -->
                         </div>
 
                     </div>
-                </div>
-                <!-- /.row -->
-
+                    <!-- /.row -->
+                </div><!-- /.container-fluid -->
             </section>
             <!-- /.content -->
         </div>
-        <!-- /.content-wrapper -->
         <div class="modal fade" id="AYCeditadminmodal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="card card-primary">
-                        <div class="card-header">
-                            <h3 class="card-title">Edit Profile</h3>
+                    <div class="card card-primary" bis_skin_checked="1">
+                        <div class="card-header" bis_skin_checked="1">
+                            <h3 class="card-title">Edit Your Profile</h3>
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form>
-                            <div class="card-body">
+                        <form method="" action="" enctype="multipart/form-data">
+                            <div class="card-body" bis_skin_checked="1">
                                 <div class="form-group">
                                     <label for="InputFullName">Full Name</label>
                                     <input type="text" class="form-control" id="InputFullName"
@@ -267,9 +276,9 @@
                                     <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
-                                    <label for="InputFullName">Education</label>
-                                    <input type="text" class="form-control" id="InputFullName"
-                                        placeholder="Enter fullName">
+                                    <label for="InputEducation">Education</label>
+                                    <input type="text" class="form-control" id="InputEducation"
+                                        placeholder="Enter education">
                                 </div>
                                 <div class="form-group">
                                     <label for="Inputlocation">Location</label>
@@ -277,35 +286,34 @@
                                         placeholder="Enter location">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Inputskills">Add skills</label>
-                                    <input type="text" class="form-control" id="Inputskills" placeholder="Enter skills">
-                                </div>
-                                <div class="form-group">
-                                    <label for="InputFile">File input</label>
+                                    <label for="exampleInputFile">File input</label>
                                     <div class="input-group">
                                         <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="InputFile">
-                                            <label class="custom-file-label" for="InputFile">Choose profile
-                                                image</label>
+                                            <input type="file" class="form-control" id="exampleInputFile">
+                                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                                         </div>
-
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Upload</span>
+                                        </div>
                                     </div>
                                 </div>
 
                             </div>
                             <!-- /.card-body -->
 
-                            <div class="card-footer border-0 text-center">
+                            <div class="card-footer" bis_skin_checked="1">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
+        <!-- /.content-wrapper -->
         <footer class="main-footer">
-            cudfcdyuhbj
+
+            <strong>Copyright &copy; 2024 <a href="">Akurinu Youth Convention </a>.</strong> All rights
+            reserved.
         </footer>
 
         <!-- Control Sidebar -->
@@ -314,20 +322,6 @@
         </aside>
         <!-- /.control-sidebar -->
     </div>
-    <!-- ./wrapper -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <!-- jQuery UI 1.11.4 -->
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button)
-    </script>
-    <!-- Bootstrap 4 -->
     <!-- ./wrapper -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
@@ -338,7 +332,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
-    <script src="../js/ayc.js"></script>
 </body>
 
 </html>
