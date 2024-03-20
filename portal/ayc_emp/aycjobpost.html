@@ -171,27 +171,32 @@
                 </div>
               </div>
               <div class="card-body">
-                <div class="form-group">
-                  <label for="inputName">Job Role </label>
-                  <input type="text" id="inputName" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label for="inputDescription">Job Description</label>
-                  <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="inputDescription">Job Requirement Qualification</label>
-                  <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="inputClientCompany">Client Company (Company offering the job opportunity)</label>
-                  <input type="text" id="inputClientCompany" placeholder="GardenTech Technologies" class="form-control">
-                </div>
-                <!-- <div class="form-group">
-                  <label for="inputProjectLeader">Job Post by </label>
-                  <input type="text" id="inputProjectLeader" placeholder="Enter name of the person posting the job"
-                    class="form-control">
-                </div> -->
+                <form id="jobForm">
+                  <div class="card-body">
+                      <div class="form-group">
+                          <label for="inputName">Job Role </label>
+                          <input type="text" id="inputName" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputLocation">Location </label>
+                          <input type="text" id="inputLocation" class="form-control" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputDescription">Job Description</label>
+                          <textarea id="inputDescription" class="form-control" rows="4" required></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputRequirements">Job Requirements/Qualifications</label>
+                          <textarea id="inputRequirements" class="form-control" rows="4" required></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="inputApplyMethod">How to Apply for the Job</label>
+                          <textarea id="inputApplyMethod" class="form-control" rows="4" required></textarea>
+                      </div>
+                  </div>
+                
+              </form>
+              
               </div>
               <!-- /.card-body -->
             </div>
@@ -268,14 +273,14 @@
           </div>
         </div>
       </section>
-      <!-- /.content -->
+      <!-- /.content -->  
     </div>
     <!-- /.content-wrapper -->
-    
-    <button class="btn btn-success swalDefaultSuccess justify-content-center"
-                            id="resrev">Reviewed</button>
-    <footer class="main-footer">
-    </footer>
+                            <footer class="main-footer">
+
+                              <strong>Copyright &copy; 2024 <a href="">Akurinu Youth Convention </a>.</strong> All rights
+                              reserved.
+                          </footer>
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
@@ -327,7 +332,6 @@
     <td>${(fileSize / 1024).toFixed(2)} KB</td>
     <td class="text-right py-0 align-middle">
       <div class="btn-group btn-group-sm">
-        <a href="#" class="btn btn-info"><i class="fas fa-eye"></i></a>
         <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
       </div>
     </td>

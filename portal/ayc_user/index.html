@@ -177,7 +177,7 @@
                                             alt="User profile picture">
 
                                     </div>
-                                    <h3 class="profile-username text-center">Ezekiel Maina</h3>
+                                    <h3 class="profile-username text-center" id="fullNameDisplay">Ezekiel Maina</h3>
                                     <p class="text-muted text-center">AYC member </p>
                                     <strong><i class="fas fa-book mr-1"></i> Education</strong>
 
@@ -304,7 +304,9 @@
             </div>
         </div>
         <footer class="main-footer">
-            cudfcdyuhbj
+
+            <strong>Copyright &copy; 2024 <a href="">Akurinu Youth Convention </a>.</strong> All rights
+            reserved.
         </footer>
 
         <!-- Control Sidebar -->
@@ -338,6 +340,22 @@
     <!-- AdminLTE App -->
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
     <script src="../js/ayc.js"></script>
+    <script>
+        // Retrieve stored data from sessionStorage
+var fullName = sessionStorage.getItem("fullName");
+var email = sessionStorage.getItem("email");
+var password = sessionStorage.getItem("password");
+var retypePassword = sessionStorage.getItem("retypePassword");
+var agreeTerms = sessionStorage.getItem("agreeTerms");
+
+// Display retrieved data in form fields
+document.getElementById("fullNameDisplay").value = fullName;
+document.getElementById("emailDisplay").value = email;
+document.getElementById("passwordDisplay").value = password;
+document.getElementById("retypePasswordDisplay").value = retypePassword;
+document.getElementById("agreeTermsDisplay").checked = agreeTerms === "true";
+
+    </script>
 </body>
 
 </html>

@@ -219,7 +219,7 @@
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-header ">
                                             <h5 class="modal-title" id="jobModalLabel">Job Information</h5>
                                             <button type="button" class="btn btn-outline-primary" data-dismiss="modal"
                                                 aria-label="Close">
@@ -229,10 +229,34 @@
                                         <div class="modal-body">
                                             <!-- Job information content will be loaded here -->
                                             <!-- You can dynamically load content using JavaScript/jQuery -->
-                                            <p>Job Title: Software Engineer</p>
-                                            <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <p><b><strong>Job Title</strong></b>: Software Engineer</p>
+                                            <p><b><strong>Salary</strong></b>: $10,000 per year</p>
+                                            <p><b><strong>Location</strong></b>:Nairobi</p>
+                                            <p><b><strong>About Us</strong></b>:
+                                                XYZ Tech Solutions Ltd. is a leading software development company based in
+                                                Nairobi, Kenya, specializing in innovative solutions for diverse industries.
+    </p>
+                                            <p><b><strong>Responsibilities</strong></b>:
+
+                                                Develop high-quality software solutions.
+                                                Participate in all phases of the software development lifecycle.
+                                                Write clean, efficient, and maintainable code.
+                                                Collaborate with cross-functional teams.
+                                                </p>
+                                               <p>
+                                                <b><strong>Requirements</strong></b>:
+                                                Bachelor's degree in Computer Science or related field.
+                                                Proven experience as a Software Engineer.
+                                                Proficiency in programming languages.
+                                                Strong problem-solving skills.
+                                                Excellent communication skills.
+                                               </p>
+                                            <p><b><strong>How to Apply</strong></b>:
+                                                Send resume to <a href="http://careers@xyztechsolutions.com.">careers@xyztechsolutions.com.</a> <br>
+    
+                                                XYZ Tech Solutions Ltd. is an equal opportunity employer.</p>
                                             </p>
-                                            <p>Salary: $100,000 per year</p>
+
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-outline-success"
@@ -571,36 +595,7 @@
                     </div>
                     <!-- /.card-body -->
                     <!-- Message Icon -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#messageModal">
-                        <i class="fas fa-comments"></i>
-                    </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-right modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="messageModalLabel">Direct Chat</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <!-- Your existing card content goes here -->
-                                    <div
-                                        class="card card-primary card-outline direct-chat direct-chat-primary shadow-none">
-                                        <!-- Existing card content -->
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- /.card-footer -->
                 </div>
                 <!-- /.card -->
 
@@ -608,10 +603,11 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+        <footer class="main-footer">
 
-        <footer class="main-footer bg-teal">
+            <strong>Copyright &copy; 2024 <a href="">Akurinu Youth Convention </a>.</strong> All rights
+            reserved.
         </footer>
-
 
     </div>
     <!-- ./wrapper -->

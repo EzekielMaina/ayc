@@ -258,6 +258,8 @@
         <!-- /.content-wrapper -->
         <footer class="main-footer">
 
+            <strong>Copyright &copy; 2024 <a href="">Akurinu Youth Convention </a>.</strong> All rights
+            reserved.
         </footer>
 
         <!-- Control Sidebar -->
@@ -272,39 +274,33 @@
     <!-- Bootstrap 4 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- DataTables & Plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net@1.11.6/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-bs4@2.3.6/js/dataTables.bootstrap4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-responsive@2.2.9/js/dataTables.responsive.min.js"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/datatables.net-responsive-bs4@2.2.9/js/responsive.bootstrap4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons-bs4@2.0.2/js/buttons.bootstrap4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jszip@3.6.0/dist/jszip.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.1.68/build/pdfmake.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.1.68/build/vfs_fonts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/buttons.print.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/buttons.colVis.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.bootstrap4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.72/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.72/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.colVis.min.js"></script>
 
     <!-- AdminLTE App -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
     <!-- Page specific script -->
     <script>
         $(function () {
-            $("#example1").DataTable({
-                "responsive": true, "lengthChange": false, "autoWidth": false,
-                "buttons": ["csv", "excel", "pdf", "print", "colvis"]
-            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "responsive": true,
-            });
-        });
+      $("#example1").DataTable({
+        "dom": 'lBfrtip',
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "lengthChange": false,
+        "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+
+    });
     </script>
 </body>
 
