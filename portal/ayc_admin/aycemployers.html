@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AYC | Employers</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="../../img/akurinu_youth_convention_logo.png" type="image/x-icon">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome --><!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/datatables.net-bs4@2.3.6/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/datatables.net-responsive-bs4@2.2.9/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/datatables.net-buttons-bs4@2.0.2/css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <!-- Preloader -->
+            <ul class="navbar-nav">
+                <li class="nav-item m-2">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+
+
+
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-light-primary elevation-4">
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../../img/ezekiel.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Admin</a> <i class="badge-success rounded-circle bg-success"></i>
+                    </div>
+                </div>
+
+
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                        <li class="nav-item ">
+                            <a href="index.html" class="nav-link ">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="" class="nav-link active">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Users
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="aycjobapplication.html" class="nav-link ">
+                                <i class="nav-icon fas fa-file-alt"></i>
+                                <p>
+                                    Job Applications
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="aycjobpost.html" class="nav-link ">
+                                <i class="nav-icon fas fa-briefcase"></i>
+                                <p>
+                                    Post Job
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="aycjobposted.html" class="nav-link  ">
+                                <i class="nav-icon fas fa-briefcase"></i>
+                                <p>
+                                    Posted Job
+                                </p>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1> Employers Data</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">Employers</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">AYC Employers</h3>
+
+                                </div>
+
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Full Name</th>
+                                                <th>Phone </th>
+                                                <th>Email</th>
+                                                <th>Company</th>
+                                                <th>location</th>
+                                                <th>username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           
+
+                                            <!-- User 65 -->
+                                            <tr>
+                                                <td>Emily <span class="badge badge-info ml-4  " type="button"
+                                                        style="right: auto;">info</span></td>
+                                                <td>+25752348765</td>
+                                                <td>emily@gmail.com</td>
+                                                <td>Finance</td>
+                                                <td>Kisumu</td>
+                                                <!-- Unique Username -->
+                                                <td class="username">Emily_Kisumu_52348765</td>
+                                            </tr>
+
+                                            <!-- User 66 -->
+                                            <tr>
+                                                <td>Logan <span class="badge badge-info ml-4  " type="button"
+                                                        style="right: auto;">info</span></td>
+                                                <td>+25759012345</td>
+                                                <td>logan@gmail.com</td>
+                                                <td>Engineering</td>
+                                                <td>Mombasa</td>
+                                                <!-- Unique Username -->
+                                                <td class="username">Logan_Mombasa_59012345</td>
+                                            </tr>
+
+                                            <!-- User 67 -->
+                                            <tr>
+                                                <td>Aria <span class="badge badge-info ml-4  " type="button"
+                                                        style="right: auto;">info</span></td>
+                                                <td>+25754123698</td>
+                                                <td>aria@gmail.com</td>
+                                                <td>Healthcare</td>
+                                                <td>Nairobi</td>
+                                                <!-- Unique Username -->
+                                                <td class="username">Aria_Nairobi_54123698</td>
+                                            </tr>
+
+                                            <!-- User 68 -->
+                                            <tr>
+                                                <td>Elijah <span class="badge badge-info ml-4  " type="button"
+                                                        style="right: auto;">info</span></td>
+                                                <td>+25751234567</td>
+                                                <td>elijah@gmail.com</td>
+                                                <td>IT</td>
+                                                <td>Kisumu</td>
+                                                <!-- Unique Username -->
+                                                <td class="username">Elijah_Kisumu_51234567</td>
+                                            </tr>
+
+                                            <!-- User 69 -->
+                                            <tr>
+                                                <td>Scarlett <span class="badge badge-info ml-4  " type="button"
+                                                        style="right: auto;">info</span></td>
+                                                <td>+25757689012</td>
+                                                <td>scarlett@gmail.com</td>
+                                                <td>Marketing</td>
+                                                <td>Mombasa</td>
+                                                <!-- Unique Username -->
+                                                <td class="username">Scarlett_Mombasa_57689012</td>
+                                            </tr>
+
+                                            <!-- User 70 -->
+                                            <tr>
+                                                <td>Carter <span class="badge badge-info ml-4" type="button">info</span>
+                                                </td>
+                                                <td>+25753421679</td>
+                                                <td>carter@gmail.com</td>
+                                                <td>Finance</td>
+                                                <td>Nairobi</td>
+                                                <!-- Unique Username -->
+                                                <td class="username">Carter_Nairobi_53421679</td>
+                                            </tr>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Full Name</th>
+                                                <th>Phone </th>
+                                                <th>Email</th>
+                                                <th>Company</th>
+                                                <th>location</th>
+                                                <th>username</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables & Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net@1.11.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-bs4@2.3.6/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-responsive@2.2.9/js/dataTables.responsive.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/datatables.net-responsive-bs4@2.2.9/js/responsive.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons-bs4@2.0.2/js/buttons.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.6.0/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.1.68/build/pdfmake.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfmake@0.1.68/build/vfs_fonts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/datatables.net-buttons@2.0.2/js/buttons.colVis.min.js"></script>
+
+    <!-- AdminLTE App -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+</body>
+
+</html>

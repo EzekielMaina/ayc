@@ -31,7 +31,7 @@
   <!-- Summernote -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css">
   <!-- css -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -50,7 +50,7 @@
       <ul class="navbar-nav ml-auto m-2">
         <li class="nav-item dropdown mr-1">
           <a class="nav-link" id="showMessagesBtn" href="javascript:void" aria-expanded="false">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope " ></i>
             <span class="badge badge-info navbar-badge">10</span>
           </a>
 
@@ -112,7 +112,14 @@
                 </p>
               </a>
             </li>
-
+            <li class="nav-item ">
+              <a href="aycemployers.html" class="nav-link ">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Employers
+                </p>
+              </a>
+            </li>
             <li class="nav-item ">
               <a href="aycmembers.html" class="nav-link ">
                 <i class="nav-icon fas fa-users"></i>
@@ -203,7 +210,7 @@
                 <div class="icon">
                   <i class="fa fa-crown"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                <a href="aycbeneficiaries.html" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -391,7 +398,7 @@
 
                 </div>
 
-                <div class="card-footer">
+                <div class="card-footer bg-secondary">
                   <form action="#" method="post">
                     <div class="input-group">
                       <input type="text" name="message" placeholder="Type Message ..." class="form-control">
@@ -457,7 +464,7 @@
   <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars"></script>
   <!-- AdminLTE App -->
   <script src="https://cdn.jsdelivr.net/npm/admin-lte"></script>
-  <script src="js/ayc.js"></script>
+  <script src="../js/ayc.js"></script>
   <script>
     // JavaScript to toggle visibility of chat container
     document.getElementById('showMessagesBtn').addEventListener('click', function () {
