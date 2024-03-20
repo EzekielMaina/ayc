@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AYC | Login</title>
+  <!-- icon -->
+  <link rel="shortcut icon" href="../img/akurinu_youth_convention_logo.png" type="image/x-icon">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/dist/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+
+</head>
+
+<body class="hold-transition register-page">
+  <div class="register-box">
+    <div id="successAlert" class="alert alert-success" style="display:none;">
+      Welcome back!!!
+    </div>
+    <div class="card card-outline card-primary">
+      <div class="card-header text-center">
+        <a href="../index2.html" class="h1"><img src="../img/akurinu_youth_convention_logo.png"
+            class="rounded-circle m-2" width="60" height="60" alt="Akurinu Youth Convention logo"><b
+            class="text-primary"><strong>AYC</strong></b></a>
+      </div>
+      <div class="card-body">
+        <h4 class="login-box-msg">Login</h4>
+        <form id="loginForm" action="" method="post">
+          <div class="input-group mb-3">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email">
+              <div class="input-group-append">
+                  <div class="input-group-text">
+                      <span class="fas fa-envelope"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="input-group mb-3">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+              <div class="input-group-append">
+                  <div class="input-group-text">
+                      <span class="fas fa-lock"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-4">
+                  <button type="submit" class="btn btn-outline-success btn-block">Login</button>
+              </div>
+          </div>
+      </form>
+      
+        <br>
+
+        <!-- <div class="social-auth-links text-center">
+          <a href="#" class="btn btn-block btn-primary">
+            <i class="fab fa-google-plus mr-2"></i>
+            Signing using Google+
+          </a>
+        </div> -->
+        <div class="row  justify-content-center">
+          <p class="text-muted">Not yet a member?</p> &nbsp;&nbsp;
+          <a href="registration.html" class="">Signup </a>
+        </div>
+      </div>
+      <!-- /.form-box -->
+    </div><!-- /.card -->
+  </div>
+  <!-- /.register-box -->
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get input values
+    var inputUsername = document.getElementById('inputEmail').value.trim();
+    var inputPassword = document.getElementById('inputPassword').value.trim();
+
+    // Define predefined username and password
+    var predefinedUsername = 'user@user.com';
+    var predefinedPassword = 'password';
+
+  
+    
+    // Check if input matches predefined username and password
+    if (inputUsername === predefinedUsername && inputPassword === predefinedPassword) {
+      
+    window.location.replace("./ayc_user/index.html");
+    // If everything is valid, submit the form
+    var successAlert = document.getElementById("successAlert");
+    successAlert.style.display = "block";
+       // Hide the alert after 3 seconds (adjust the duration as needed)
+    setTimeout(function() {
+      successAlert.style.display = "none";
+    }, 3000); // 3000 milliseconds = 3 seconds
+  
+    } else  if (inputUsername === "employer@emp.com" && inputPassword === "employer") {
+      window.location.replace("./ayc_emp/dashboard.html");
+    // If everything is valid, submit the form
+    var successAlert = document.getElementById("successAlert");
+    successAlert.style.display = "block";
+       // Hide the alert after 3 seconds (adjust the duration as needed)
+    setTimeout(function() {
+      successAlert.style.display = "none";
+    }, 3000); // 3000 milliseconds = 3 seconds
+  
+        
+    } else {
+      alert('Invalid username or password. Please try again.'); // Display error message
+    }
+});
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AYC| User Profile</title>
+    <link rel="shortcut icon" href="../../img/akurinu_youth_convention_logo.png" type="image/x-icon">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <!-- Preloader -->
+            <ul class="navbar-nav">
+                <li class="nav-item m-2">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+
+
+            </ul>
+
+            <ul class="navbar-nav ml-auto m-2">
+                <li class="nav-item dropdown mr-1">
+                    <a class="nav-link" id="showMessagesBtn" href="javascript:void" aria-expanded="false">
+                        <i class="fas fa-envelope"></i>
+                        <span class="badge badge-info navbar-badge">10</span>
+                    </a>
+
+                </li>
+                <li class="nav-item dropdown mr-1">
+                    <a class="nav-link" id="notificationDropdownToggle" href="#" aria-expanded="false">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" id="notificationDropdownMenu">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new email messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#messageModal">See All
+                            Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" role="button">
+                        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.2em"
+                                viewBox="0 0 1568 1280">
+                                <path fill="currentColor"
+                                    d="M640 1184q0 4 1 20t.5 26.5t-3 23.5t-10 19.5t-20.5 6.5H288q-119 0-203.5-84.5T0 992V288Q0 169 84.5 84.5T288 0h320q13 0 22.5 9.5T640 32q0 4 1 20t.5 26.5t-3 23.5t-10 19.5T608 128H288q-66 0-113 47t-47 113v704q0 66 47 113t113 47h312l11.5 1l11.5 3l8 5.5l7 9zm928-544q0 26-19 45l-544 544q-19 19-45 19t-45-19t-19-45V896H448q-26 0-45-19t-19-45V448q0-26 19-45t45-19h448V96q0-26 19-45t45-19t45 19l544 544q19 19 19 45" />
+                            </svg></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-light-primary elevation-4">
+
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../../img/ezekiel.png" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Admin</a> <i class="badge-success rounded-circle bg-success"></i>
+                    </div>
+                </div>
+
+
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                           with font-awesome or any other icon font library -->
+                        <li class="nav-item ">
+                            <a href="dashboard.html" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="javascript:void" class="nav-link ">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>
+                                    Profile
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="aycjobapplication.html" class="nav-link ">
+                                <i class="nav-icon fas fa-file-alt"></i>
+                                <p>
+                                    Job Applications
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="aycjobpost.html" class="nav-link ">
+                                <i class="nav-icon fas fa-briefcase"></i>
+                                <p>
+                                    Post Job
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="aycjobposted.html" class="nav-link ">
+                                <i class="nav-icon fas fa-briefcase"></i>
+                                <p>
+                                    Posted Job
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper pb-1">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h4 class="text-primary text-muted">Profile Review</h4>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="javascript:void">Reviewing</a></li>
+                                <li class="breadcrumb-item active">applyee Profile</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container text-center justify-content-center ">
+                    <div class="justify-content-center">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <!-- Widget: user profile -->
+                                <div class="card card-widget widget-user">
+                                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                                    <div class="widget-user-header bg-info">
+                                        <h3 class="widget-user-username">Isaac Muthoni</h3>
+                                        <h5 class="widget-user-desc">Architecture</h5>
+                                    </div>
+                                    <div class="widget-user-image">
+                                        <img class="img-circle elevation-2" src="../../img/isaac.png"
+                                            alt="User Avatar">
+                                    </div>
+                                    <div class="card-body box-profile">
+                                        <br>
+                                        <strong><i class="fas fa-book mr-1"></i> Education</strong>
+    
+                                        <p class="text-muted">
+                                            B.S. in Computer Science from MASENO University
+                                        </p>
+    
+                                        <hr>
+    
+                                        <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+    
+                                        <p class="text-muted">Nairobi, Kenya</p>
+    
+                                        <hr>
+    
+                                        <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+    
+                                        <p class="text-muted">
+                                            <span class="tag tag-danger">UI Design</span>
+                                            <span class="tag tag-success">Coding</span>
+                                            <span class="tag tag-info">Javascript</span>
+                                            <span class="tag tag-warning">PHP</span>
+                                            <span class="tag tag-primary">Node.js</span>
+                                        </p>
+    
+                                        <hr>
+    
+                                        <strong><i class="far fa-file-alt mr-1"></i> Work Description</strong>
+    
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                            fermentum enim neque.</p>
+    
+    
+                                      
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="row">
+                                            <div class="col-sm-4 border-right">
+                                                <div class="description-block">
+                                                    <h5 class="description-header">3,200</h5>
+                                                    <span class="description-text">SALES</span>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-sm-4 border-right">
+                                                <div class="description-block">
+                                                    <h5 class="description-header">13,000</h5>
+                                                    <span class="description-text">FOLLOWERS</span>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-sm-4">
+                                                <div class="description-block">
+                                                    <h5 class="description-header">35</h5>
+                                                    <span class="description-text">PRODUCTS</span>
+                                                </div>
+                                                <!-- /.description-block -->
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+                                        <!-- /.row -->
+                                    </div>
+                                </div>
+                                <!-- /.widget-user -->
+                            </div>
+                            <!-- /.card -->
+
+                            <!-- Documents Box -->
+<div class="col-md-4">
+    <a href="javascript:void" data-toggle="modal" data-target="#modal-lg">
+        <div class="card mb-3 bg-warning">
+            <span class="   icon"><i class="far fa-fw fa-file-pdf"></i></span>
+    
+            <div class="info-box-content">
+              <h5 class="info-box-text text-bold">document name</h5>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+    </a>
+</div>
+                            <!-- /.card -->
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+                    <div class="">
+                        
+                    <button class="btn btn-success swalDefaultSuccess justify-content-center" id="resrev">Reviewed</button>
+                    <button class="btn btn-danger justify-content-center" id="resrev">keep pending</button>
+
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <div class="modal fade" id="modal-lg">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Large Modal</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body&hellip;</p>
+                  <iframe src="../../includes/docs/Margaret-Wangari-Waithaka-CV.pdf" width="100%" height="600px"></iframe>
+
+                </div>
+                <div class="modal-footer justify-content-between">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+          </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+
+            <strong>Copyright &copy; 2024 <a href="">Akurinu Youth Convention </a>.</strong> All rights
+            reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+    <script>
+        $(function() {
+    var Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+    });
+        $('.swalDefaultSuccess').click(function() {
+      Toast.fire({
+        icon: 'success',
+        title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+      })
+    });});
+    </script>
+</body>
+
+</html>

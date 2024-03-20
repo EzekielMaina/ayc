@@ -1,0 +1,27 @@
+/* Your existing styles */
+
+@media only screen  and  (max-width: 900px) {
+    /* Adjust styles for smaller screens, e.g., mobile devices */
+    .navbar-nav {
+      flex-direction: row-reverse; /* Stack items vertically for smaller screens */
+    }
+    
+    .navbar-nav li {
+      margin: 4px; /* Add spacing between items */
+    }
+  }
+  .floating-chat {
+      position: fixed;
+      width: 400px;
+      bottom: 70px; /* Adjust as needed */
+      right: 20px; /* Adjust as needed */
+      z-index: 1000; /* Ensure it appears on top of other elements */
+  }
+@media only screen and (max-width:900px) {
+  .floating-chat {
+    bottom: 70px; /* Adjust as needed */
+    width: auto;
+    right: 2px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it appears on top of other elements */
+}
+}

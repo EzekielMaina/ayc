@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AYC| User Profile</title>
+  <link rel="shortcut icon" href="../../img/akurinu_youth_convention_logo.png" type="image/x-icon">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      <!-- Preloader -->
+      <ul class="navbar-nav">
+        <li class="nav-item m-2">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto m-2">
+        <li class="nav-item dropdown mr-1">
+          <a class="nav-link" id="showMessagesBtn" href="javascript:void" aria-expanded="false">
+            <i class="fas fa-envelope"></i>
+            <span class="badge badge-info navbar-badge">10</span>
+          </a>
+
+        </li>
+        <li class="nav-item dropdown mr-1">
+          <a class="nav-link" id="notificationDropdownToggle" href="#" aria-expanded="false">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" id="notificationDropdownMenu">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new email messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#messageModal">See All
+              Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" role="button">
+            <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.2em"
+                viewBox="0 0 1568 1280">
+                <path fill="currentColor"
+                  d="M640 1184q0 4 1 20t.5 26.5t-3 23.5t-10 19.5t-20.5 6.5H288q-119 0-203.5-84.5T0 992V288Q0 169 84.5 84.5T288 0h320q13 0 22.5 9.5T640 32q0 4 1 20t.5 26.5t-3 23.5t-10 19.5T608 128H288q-66 0-113 47t-47 113v704q0 66 47 113t113 47h312l11.5 1l11.5 3l8 5.5l7 9zm928-544q0 26-19 45l-544 544q-19 19-45 19t-45-19t-19-45V896H448q-26 0-45-19t-19-45V448q0-26 19-45t45-19h448V96q0-26 19-45t45-19t45 19l544 544q19 19 19 45" />
+              </svg></i>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-light-primary elevation-4">
+
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../img/ezekiel.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Admin</a> <i class="badge-success rounded-circle bg-success"></i>
+          </div>
+        </div>
+
+
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                           with font-awesome or any other icon font library -->
+            <li class="nav-item ">
+              <a href="dashboard.html" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="javascript:void" class="nav-link active ">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Profile
+                </p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="aycjobapplication.html" class="nav-link ">
+                <i class="nav-icon fas fa-file-alt"></i>
+                <p>
+                  Job Applications
+                </p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="aycjobpost.html" class="nav-link ">
+                <i class="nav-icon fas fa-briefcase"></i>
+                <p>
+                  Post Job
+                </p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a href="aycjobposted.html" class="nav-link ">
+                <i class="nav-icon fas fa-briefcase"></i>
+                <p>
+                  Posted Job
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper pb-1">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Profile</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Admin Profile</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container text-center justify-content-center ">
+          <div class="justify-content-center">
+            <div class="col-md-8">
+
+              <!-- Profile Image -->
+              <div class="card card-primary card-outline">
+                <div class="card-body box-profile">
+                  <div class="text-center">
+                    <img class="profile-user-img img-fluid img-circle" src="../../img/ezekiel.png"
+                      alt="User profile picture">
+
+                  </div>
+
+                  <h3 class="profile-username text-center">Ezekiel Maina</h3>
+
+                  <p class="text-muted text-center">Chief AYC Administrator </p>
+
+
+
+                  <strong><i class="fas fa-book mr-1"></i> Education</strong>
+
+                  <p class="text-muted">
+                    B.S. in Computer Science from MASENO University
+                  </p>
+
+                  <hr>
+
+                  <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+
+                  <p class="text-muted">Nairobi, Kenya</p>
+
+                  <hr>
+
+                  <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+
+                  <p class="text-muted">
+                    <span class="tag tag-danger">UI Design</span>
+                    <span class="tag tag-success">Coding</span>
+                    <span class="tag tag-info">Javascript</span>
+                    <span class="tag tag-warning">PHP</span>
+                    <span class="tag tag-primary">Node.js</span>
+                  </p>
+
+                  <hr>
+
+                  <strong><i class="far fa-file-alt mr-1"></i> Work Description</strong>
+
+                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                    fermentum enim neque.</p>
+
+
+                  <hr>
+                  <div class="justify-content-center text-center">
+                    <button class="btn btn-success text-center" data-toggle="modal"
+                      data-target="#AYCeditadminmodal">Edit<i class="fas fa-pencil-alt ml-2"></i></button>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+
+              <!-- About Me Box -->
+
+              <!-- /.card -->
+            </div>
+
+            <!-- /.row -->
+          </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <div class="modal fade" id="AYCeditadminmodal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="card card-primary" bis_skin_checked="1">
+            <div class="card-header" bis_skin_checked="1">
+              <h3 class="card-title">Edit Your Profile</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form method="" action="" enctype="multipart/form-data">
+              <div class="card-body" bis_skin_checked="1">
+                <div class="form-group">
+                  <label for="InputFullName">Full Name</label>
+                  <input type="text" class="form-control" id="InputFullName" placeholder="Enter fullName">
+                </div>
+                <div class="form-group">
+                  <label for="InputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                  <label for="InputEducation">Education</label>
+                  <input type="text" class="form-control" id="InputEducation" placeholder="Enter education">
+                </div>
+                <div class="form-group">
+                  <label for="Inputlocation">Location</label>
+                  <input type="text" class="form-control" id="Inputlocation" placeholder="Enter location">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputFile">File input</label>
+                  <div class="input-group">
+                    <div class="custom-file">
+                      <input type="file" class="form-control" id="exampleInputFile">
+                      <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                      <span class="input-group-text">Upload</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.card-body -->
+
+              <div class="card-footer" bis_skin_checked="1">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+
+      <strong>Copyright &copy; 2024 <a href="">Akurinu Youth Convention </a>.</strong> All rights
+      reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+</body>
+
+</html>
